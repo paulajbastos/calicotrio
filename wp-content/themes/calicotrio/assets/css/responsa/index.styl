@@ -1,0 +1,43 @@
+responsa = {
+  gutter: 20px,
+  max-width: 1024px
+  container-pad: 0 10px
+}
+
+
+
+
+container(width, pad = responsa.container-pad)
+	margin 0 auto
+	max-width unit(width, 'px')	
+	padding pad
+	
+	&:after
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		
+column(column_width, gutter = responsa.gutter, max-width = responsa.max-width, col = false, force-last = false )
+	t = calculate(column_width, gutter, max-width)
+	tt = unit(t, '%')
+	
+	float force_float(force-last)
+	max-width tt
+	margin-right (col == false) ? gutter : 0
+	overflow hidden
+	
+calculate(val, gutter, total)
+	// t = ((val - gutter) * 100) / total
+	t = (val * 100) / total
+	return t
+	
+// responsa_margin(gutter, total)
+// 	g = (gutter * 100) / total
+// 	return unit(g, '%')
+	
+force_float(force)
+  float = force ? right : left
+  return float

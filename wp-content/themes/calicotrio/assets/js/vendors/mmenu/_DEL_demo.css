@@ -1,0 +1,66 @@
+
+.header-mobile { background: #000000; height: 70px;}
+
+nav:not(.mm-menu) {
+    display: none;
+}
+.header-mobile.mm-fixed-top {
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+.header-mobile a {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC") no-repeat scroll center center transparent;
+    display: block;
+    height: 40px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+/* .header-mobile a.contacts {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVNJREFUeNq01jFLAzEYxvH2UBCxiIiDUhzcdXCyIk5ufgUXLR37JdxcXBxcuwmOOtml0EKpo04iWIpIQREVEVFLjf9AhoC9e3O5uxd+lMLdPU1yedO8UiqXdQWO122ghi4+8IwGqiiId+uRCHbxqsLrFHNRz5ACSnhTch1EPScQpnIH0w7TWcGiz5rouS45rtkMVnxCJrAQ4yUq+oT8YhAjZOAT8oWHGCE9nxC9H64cA15w4xOiW0HbfErVNhvUa8c3cecQcoZv3xA9z+fCNbe4SNq7jvEUMaUnuE/au7SjkHbSR1G637ULh73Kn+gn7cIBttELGckQh9Jo8iMOrSksYx2b2MKk8FuvUUcHl/9GbiWuooYu3pVf/eARLZQxbp8na2YR0659e+HLmM/geN+z98lSRv8hZu2QQkYh+kzKjZkvHdPahymH6DNp5Cucev0JMAAkKj0NEoYBJwAAAABJRU5ErkJggg==");
+} */
+.header-mobile a.right {
+    left: auto;
+    right: 10px;
+}
+.content {
+    background: url("menu-arrow.png") no-repeat scroll 25px 15px transparent;
+    padding: 150px 50px 50px;
+}
+.header-mobile.mm-fixed-top + .content {
+    background-position: 25px 55px;
+}
+html.mm-opened.mm-zoom-menu body {
+    background: none repeat scroll 0 0 #333;
+}
+html.mm-opened.mm-zoom-menu.mm-light body {
+    background: none repeat scroll 0 0 #f3f3f3;
+}
+html.mm-opened.mm-zoom-menu.mm-black body {
+    background: none repeat scroll 0 0 #000;
+}
+html.mm-opened.mm-zoom-menu.mm-white body {
+    background: none repeat scroll 0 0 #fff;
+}
+html.mm-opened.mm-zoom-menu .mm-page {
+    background-color: #fff;
+}
+.mm-menu li .fa {
+    font-size: 16px;
+    margin: 0 20px 0 5px;
+    width: 12px;
+}
+body.no-iconbar .mm-menu li .fa {
+    display: none !important;
+}
+body.no-buttonbars .mm-menu li.buttonbar-item {
+    display: none !important;
+}
+body.no-labels .mm-menu .mm-label, body.no-labels .mm-menu .mm-collapsed, .Collapsed {
+    display: none !important;
+}
+body.no-toggles .mm-menu li .mm-toggle {
+    display: none !important;
+}

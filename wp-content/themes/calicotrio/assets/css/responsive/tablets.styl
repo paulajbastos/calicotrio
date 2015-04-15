@@ -1,0 +1,106 @@
++below(m)
+	@require 'responsive/templates/home'
+	@require 'responsive/templates/a-factoria'
+	@require 'responsive/templates/pressroom-single'
+
+	body
+		
+		// Globals
+		.container
+			// container(735px)
+			
+		// Main menu
+		#h
+			.main-nav
+				width 650px
+			
+		// Page Header
+		#m
+			> .header
+				background-size cover
+				
+		// Portfólio's List
+		.latest-portfolio,
+		.portfolio-grid-wrapper
+			container(655px, pad: 0)
+			
+			.container
+				padding 0
+			
+			.portfolio-grid
+				.portfolio
+					column(300px, gutter: 56px, max-width: 655px)
+					margin-bottom 52px
+					
+					&:nth-of-type(2n)
+						margin-right 0
+
+		// press room grid's list
+		.press-room-grid-wrapper
+			.portfolio
+				container(460px)
+				float none
+				margin-bottom 60px
+						
+				&:nth-of-type(2n)
+					margin-right auto
+					
+		// Portfolio's filter
+		.portfolio-filter
+			container(560px, pad: 80px)
+			margin-bottom 47px
+			padding-top 20px
+			padding-bottom 34px			
+
+		// footer
+		#f
+			padding 30px 24px
+			
+			.container
+				container(720px, pad: 0)
+				
+				.contact,
+				.address
+					column(300px, gutter: 48px, max-width: 720px)
+					
+	/* PAGES */
+	
+	// 01) A Factoria
+	.page-template-a-factoria
+		.services
+			margin-bottom 155px
+			
+	// 02) Sala de Imprensa
+	.page-template-sala-de-imprensa
+		#m
+			.container-wrapper
+				padding-top 25px
+				
+				.container
+					container(720px, pad: 0)
+
+	// 03) Sala de Imprensa Single
+	.single-pressroom
+		#m
+			.container-info-wrapper
+				margin-top 45px
+				
+				.container
+					container(655px, pad: 0)
+					
+					.thumbnail
+						
+						&:nth-of-type(5n)
+							margin-right 0
+							
+						&:nth-of-type(7n)
+							margin-right 19px
+
+	// 04) Portfolio
+	.page-template-portfolio
+		#m
+			.container-wrapper
+				padding-top 25px
+				
+				.container
+					container(720px, pad: 0)

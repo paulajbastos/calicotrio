@@ -1,0 +1,22 @@
+{
+  "name": "responsa",
+  "version": "1.0.0",
+  "description": "The grid system to designers free to create and developers free to responsive easily",
+  "repository": "https://github.com/leandrocunha/responsa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-cssmin" : "~0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "nib": "^1.1.0",
+    "rupture": "^0.6.1",
+    "stylus": "^0.50.0"
+  }
+}

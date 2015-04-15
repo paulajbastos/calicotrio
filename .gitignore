@@ -1,0 +1,6 @@
+.DS_Store
+*-access_log
+*-error_log
+*.md
+/wp-content/themes/calicotrio/node_modules
+wp-content/uploads

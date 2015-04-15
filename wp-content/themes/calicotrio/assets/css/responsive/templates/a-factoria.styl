@@ -1,0 +1,95 @@
+.page-template-a-factoria
+	#m
+		.header
+			height 565px
+			
+		.container-wrapper
+			margin -350px 0 0 0
+
+			.container
+				container(680px, pad = 50px)
+				padding-top 30px
+				position relative
+				z-index 1
+				
+				.post-content
+					color brown
+					font-size 18px
+					font-weight 300
+					line-height 32px
+					
+					p
+						margin-bottom 40px
+						
+						&:last-child
+							margin-bottom 0
+					
+					strong
+						font-weight 600
+				
+			> .container
+				background-color #fff
+				
+			.team
+				.container
+					padding-top 50px
+					
+				.title-wrapper
+					position: relative;
+					background: #fff;
+					border: 1px solid #e5dcd3;
+					
+					&:after,
+					&:before
+						top: 100%;
+						left: 50%;
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+
+					&:after
+						border-color: rgba(255, 255, 255, 0);
+						border-top-color: #fff;
+						border-width: 9px;
+						margin-left: -9px;
+
+					&:before
+						border-color: rgba(229, 220, 211, 0);
+						border-top-color: #e5dcd3;
+						border-width: 10px;
+						margin-left: -10px;
+
+					.container
+						padding 35px 0
+						
+						.title
+							margin-bottom 0
+					
+				.photo
+					height 304px
+					
+					.photo-wrapper
+						display none
+
+			.services
+				margin-top 50px
+				
+				.container
+					container(700, pad = 0)
+					
+					.services-wrapper
+						border 1px tea solid
+						margin-top -66px
+						padding 65px 0
+						
+						.service
+							font-size 18px
+							font-weight 300
+							margin 0 0 35px 0
+							text-align center
+							
+						.service:last-child
+							margin-bottom 0
